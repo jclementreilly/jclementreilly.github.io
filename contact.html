@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Jacqueline Reilly Creative</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<meta name="description" content="Jacqueline Reilly is a recent graduate from the Newhouse School of Communications at Syracuse University. She is hoping to pursue a design career in New York City. She specializes in visual design">
+	<meta name="keywords" content="design, ui design, ux design, visual design, syracuse, newhouse, creative, jackie, jacqueline">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header>
+		<nav class="navigation">
+			<ul>
+				<li><a href="index.html">Work</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="resume.html">Resume</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div>
+			<h1>Get in Touch</h1>
+			<h2>I'd love to get working on your next project</h2>
+		</div>
+	</header>
+	
+	<section id="contact">
+		<h1>Contact Me</h1>
+		<article style="margin: 0 auto"; >
+			<h1 style="display:none;">Contact Jacqueline Reilly</h1>
+			<div style="width: 100%";>
+				<?php
+				if (!isset($_POST['submit']))
+				{
+				?>	
+				<form action="/gdform.php" method="post">
+				    <div>
+				        <input type="text" name="name" value="Name"/>
+				    </div>
+					<div>
+					    <input type="email" name="email" value="Email"/>
+					</div>
+					<div>
+				        <input type="text" name="name" value="Subject"/>
+				    </div>
+					<div>
+						<input name="message" value="All inquires and simple hellos are welcome."/>
+					</div>
+					<div class="button">
+						<button type="submit" name='submit'>Send your message</button>
+					</div>
+				</form>
+				<?php
+			}
+			
+		
+			?>
+			</div>
+		</article>
+	</section>
+
+	<footer>
+		<ul>
+			<li><a href ="https://www.linkedin.com/in/jclementreilly" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href ="https://twitter.com/jclementreilly" target="_blank"><i class="fa fa-twitter"></i></a></li>
+			<li><a href ="https://www.pinterest.com/jclementreilly" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
+			<li><a href ="https://www.instagram.com/jclementreilly" target="_blank"><i class="fa fa-instagram"></i></a></li>
+		</ul>	
+		<h1> &copy; 2016 Jacqueline Reilly. All rights reserved. | Syracuse, NY area </h1>
+
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+	<script src="js/site.js"></script>
+
+	<script>
+	$(document).ready(function() { 
+		var $grid = $('#grid-container').masonry({
+  			itemSelector: '.item',
+			percentPosition: true,
+			gutter: 20,
+		});
+
+		$grid.imagesLoaded().progress( function() {
+  			$grid.masonry('layout');
+		});
+
+		$('#grid-container .item').mouseout(function(){
+			$(this).find('.description').css("visibility", "hidden");
+		});
+		$('#grid-container .item').mouseover(function(){
+			$(this).find('.description').css("visibility", "visible");
+		});
+	});
+	</script>
+	
+</body>
+
+</html>

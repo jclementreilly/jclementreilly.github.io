@@ -1,0 +1,367 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url(font-awesome.min.css);
+
+
+a { text-decoration: none; color: #fff; }
+img { display: inline-block; max-width:100%; }
+body { color: rgb (31,31,31); font-family: Arvo; font-weight: 400; margin: 0;}
+h1 { font-family: "Montserrat", Lato, Arial, sans-serif; text-transform:uppercase; letter-spacing: 2px; text-align: center; }
+h2 { font-family: "Montserrat", Lato, Arial, sans-serif; }
+
+
+header { 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	left:0;
+	top:0;
+	background-image: url('../img/Brush-Branding-rev.jpg');
+	background-position: center center;
+	background-size: cover; 
+	background-attachment: fixed; 
+	width:100%;
+	height: 70vh;
+	color: #fff;
+}
+
+#girl-code-cover { background-image: url('../img/page-covers/gcm.jpg'); }
+#hlo-cover { background-image: url('../img/page-covers/hlo.jpg'); }
+#wired-cover { background-image: url('../img/page-covers/wired.jpg'); }
+#beautifulexposure-cover { background-image: url('../img/page-covers/beautifulexposure.jpg'); }
+#anatolian-cover { background-image: url('../img/page-covers/anatoliankitchen.jpg'); }
+#pizzahut-cover { background-image: url('../img/page-covers/pizzahut.jpg'); }
+#arc-cover { background-image: url('../img/page-covers/arc.jpg'); }
+#amivitale-cover { background-image: url('../img/page-covers/amivitale.jpg'); }
+#honey-cover { background-image: url('../img/page-covers/honey.jpg'); }
+#cityinternships-cover { background-image: url('../img/page-covers/cityinternships.jpg'); }
+#wearorange-cover { background-image: url('../img/page-covers/wearorange.jpg'); }
+#about-cover { background-image: url('../img/jackie-about.jpg');  }
+
+header div { width: 45%; margin: auto; border: 2px solid #fff; text-align: center; }
+#header-div:hover { border: 2px solid rgb(177,175,218); }
+header div.landing-page-transform { transform:translateY(50%); animation-name: name-box; animation-duration: 2s; animation-timing-function: ease-in; animation-fill-mode: forwards; }
+
+ @keyframes name-box {
+        from { transform:translateY(0); opacity: 0; }
+        to { transform:translateY(10px); opacity: 1;}
+    }
+
+header div h1 { font-family: "Montserrat", Lato, Arial, sans-serif; text-transform:uppercase; letter-spacing: 5px; margin: 25px 0 10px 0; }
+header div h2 { margin-bottom: 30px; text-transform:uppercase; letter-spacing: 1px; font-size: 0.67em; }
+
+header nav { top: 0; position: fixed; display: flex; justify-content:center; align-items:center; width: 100%; transition: 250ms ease all;  }
+header nav.scrolled { background:rgba(0,0,0,.9); z-index: 100; }
+header nav ul { display:flex; list-style: none; margin:0; padding:0; }
+header nav ul li { text-align: center; padding: 30px 20px; }
+header nav ul li a { font-family: "Montserrat"; color: #fff; text-decoration:none; text-transform:uppercase; font-size: .8em; letter-spacing: 1px;}
+header nav ul li a:hover { color: rgb(177,175,218); }
+
+#first-column { width: 25%; }
+#first-column h1 { text-align: left; padding-right: 20px;}
+#first-column h1:after { content: ""; display: block; height: 3px; width: 27px; background: rgb(31,31,31); margin-top: 40px; }
+
+#second-column { width: 75%; }
+
+#resume-section #first-column h1 { font-size: 1em; }
+#resume-section #second-column p { font-size: .8em; }
+#resume-section button { border: none; background-color: rgb(31,31,31); color: #ffffff; margin: 10px 0 30px 0; padding: 15px; font-family: "Montserrat", Lato, Arial, sans-serif; text-transform:uppercase; letter-spacing: 5px; }
+#resume-section button:hover { background-color: rgb(177,175,218); }
+
+
+section { min-height: 50vh; display: flex; justify-content:center; align-items:center; flex-direction: column; }
+div .vertical-rule {display:flex; margin:0 auto; clear: both; }
+.vertical-rule{ height: 10rem; width: 1px; background-color: #000; margin: 5rem auto 5rem auto; }
+
+body section:nth-child(3) > div { 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	background-image: url('../img/jackie-headshot.jpg');
+	background-position: center top;
+	background-size: cover; 
+	background-attachment: fixed; 
+	height: 350px;
+}
+
+section article { width: 1000px; display: flex; justify-content: center; align-items: top; }
+section > h1 { margin-top: 50px; }
+section #portfolio-page { width: 1000px; }
+section #portfolio-page div { margin-bottom: 20px; }
+section #portfolio-page p a { color: rgb(31,31,31); }
+section #portfolio-page p a:hover { color: rgb(177,175,218); }
+section #portfolio-page button { border: none; background-color: rgb(31,31,31); color: #ffffff; margin: 10px 0 30px 0; padding: 15px; font-family: "Montserrat", Lato, Arial, sans-serif; text-transform:uppercase; letter-spacing: 5px; }
+section #portfolio-page button:hover { background-color: rgb(177,175,218); }
+section #portfolio-page ul { line-height: 30px; }
+section #portfolio-page ul li a { color: rgb(31,31,31); }
+section #portfolio-page ul li a:hover { color: rgb(177,175,218); }
+
+#style { width: 49%; float: left; }
+.left { margin-right: 10px; }
+.right { margin-left: 10px; }
+span { margin-bottom: 10px; display: flex; justify-content:center; font-family: "Montserrat"; color: rgb(31,31,31); text-decoration:none; text-transform:uppercase; font-size: 1em; letter-spacing: 1px; }
+
+#grid-container { width: 100%; margin-bottom: 20px; }
+#grid-container .item { width: 32%; margin-bottom: 20px; }
+#grid-container .item:hover .description { display: block; }
+#grid-container .item .description { display: none; background: rgb(31,31,31); position: absolute; width: 100%; height: 100%; top: 0; left: 0; text-align: center; }
+#grid-container .item .description > div { display: table; width: 100%; height: 100%; }
+#grid-container .item .description > div > div { display: table-cell; vertical-align: middle; }
+#grid-container .item div h3 { font-family: Lato, sans-serif; letter-spacing: 1px; font-size: 18px; line-height: 24px; font-weight: 700; color: #fff; margin-bottom: 0; text-transform: uppercase; }
+#grid-container .item div span { color: #A7A7A7; font-size: 12px; line-height: 16px; font-weight: 400;display: inline-block; text-transform: uppercase; }
+#grid-container .item div span:after { content: ""; display: block; height: 3px; width: 27px; background: rgb(177,175,218); text-align: center; margin: 25px auto 0; }
+
+section p { line-height: 30px; }
+#visual-description { margin: 20px 0; display: flex; justify-content: space-between; align-items:center; }
+#visual-description h1 { display: none; }
+#visual-description div div:first-child { text-align: center; font-size: 1.5em; color:rgb(177,175,218); }
+#visual-description div div:last-child { color: rgb(31,31,31); }
+#visual-description i { font-size: 1.3em; }
+#visual-description p { text-transform:uppercase; letter-spacing: 1px; font-size: 0.67em; }
+
+#work { margin-bottom: 20px; }
+
+#resume { color: #fff; background-color: rgb(31,31,31); }
+#resume button { border: none; background-color: rgb(255,255,255); color: rgb(31,31,31); margin: 10px 0 30px 0; padding: 15px; font-family: "Montserrat", Lato, Arial, sans-serif; text-transform:uppercase; letter-spacing: 5px; }
+#resume button:hover { background-color: rgb(177,175,218); }
+#resume #first-column h1 { color: rgb(70,70,70); }
+#resume #first-column h1:after { background-color: rgb(70,70,70); }
+section p a { color: #fff; text-decoration: none; }
+section p a:hover { color: rgb(177,185,218); }
+
+body section:nth-child(5) > div { 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	background-image: url('../img/sketchbook.jpg');
+	background-position: center top;
+	background-size: cover; 
+	background-attachment: fixed; 
+	height: 350px;
+}
+
+section form { text-transform:uppercase; letter-spacing: 1px; font-size: 0.67em; }
+section form div { width: 100%; margin: 15px 0; }
+section form input { text-indent: 5px; padding: 10px 0; border: 1px solid rgb(31,31,31); text-transform:uppercase; letter-spacing: 1px; font-size: 0.67em; width: 100%; }
+#message { height: 70px; }
+section form textarea { border: 1px solid rgb(31,31,31); width: 100%; }
+.button button { border: none; background-color: rgb(31,31,31); color: #fff; margin: 10px 0 30px 0; padding: 15px; font-family: "Montserrat", Lato, Arial, sans-serif; text-transform:uppercase; letter-spacing: 5px; }
+.button button:hover { background-color: rgb(177,175,218); }
+
+#end-page-nav { display: flex; justify-content: space-between; align-tems: center; padding: 0; margin-bottom: 30px; }
+#end-page-nav li { list-style: none; }
+#end-page-nav li a { font-size: 1.3em; color: rgb(31,31,31); }
+#end-page-nav li a:hover { color: rgb(177,175,218); }
+
+footer { display: flex; justify-content:center; align-items:center; flex-direction: column; width:100%; height: 150px; background:rgb(31,31,31); color: #fff; }
+footer ul { display:flex; list-style: none; }
+footer ul li a { color: #fff; font-size: 1.3em; padding: 0 20px; }
+footer ul li a:hover { color:rgb(177,175,218); }
+footer h1 { text-transform:uppercase; letter-spacing: 1px; font-size: 0.67em; }
+
+/* ----------- iPad Pro and Desktops ----------- */
+@media all 
+  and (min-width: 1800px)
+  and (max-width: 3000px)   { 
+  	section article { width: 80% }
+	section #portfolio-page { width: 80% }
+	body section:nth-child(3) > div { background-position: center right; background-size: cover; background-attachment: inherit; }
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media all 
+  and (min-width: 1200px) 
+  and (max-width: 1600px) 
+  and (-webkit-min-pixel-ratio: 1) { 
+  
+  	section article { width: 1100px; }
+	section #portfolio-page { width: 1100px; }
+	body section:nth-child(3) > div { background-position: center right; background-size: cover; background-attachment: inherit; }
+  
+}
+
+/* ----------- Retina Screens ----------- */
+@media all 
+  and (min-width: 1200px) 
+  and (max-width: 1600px) 
+  and (-webkit-min-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+  
+  	section article { width: 1100px; }
+	section #portfolio-page { width: 1100px; }
+	header { background-attachment: inherit; }
+	body section:nth-child(3) > div { background-position: center right; background-size: cover; background-attachment: inherit; }
+}
+
+
+/* ----------- iPad ----------- */
+
+/* Portrait and Landscape */
+@media all 
+  and (min-width: 768px) 
+  and (max-width: 1024px)  {
+  	section article { width: 80%; margin: 0 auto; }
+	section #portfolio-page { width: 80%; margin: 0 auto; }
+	#style { width: 48%; }
+	#grid-container .item { width: 48%; }
+	header { height: 45vh; background-size: 100%; background-position: center top; }
+	header div { width: 50%; }
+	header div h1 { font-size: 1.7em; }
+	header div h2 { font-size: 0.6em; }
+	body section:nth-child(3) > div  { background-position: center right; background-size: cover; background-attachment: inherit; }
+	body section:nth-child(5) > div { background-size: cover; background-attachment: inherit; }
+	span { display: flex; justify-content:center; }
+	#girl-code-cover { background-position: center top; background-size: cover; background-attachment: inherit; }
+	#hlo-cover { background-size: cover; background-attachment: inherit; }
+	#wired-cover { background-size: cover; background-attachment: inherit; }
+	#beautifulexposure-cover { background-size: cover; background-attachment: inherit; }
+	#anatolian-cover { background-size: cover; background-attachment: inherit; }
+	#pizzahut-cover { background-size: cover; background-attachment: inherit; }
+	#arc-cover { background-size: cover; background-attachment: inherit; }
+	#amivitale-cover { background-size: cover; background-attachment: inherit; }
+	#honey-cover { background-size: cover; background-attachment: inherit; }
+	#cityinternships-cover { background-size: cover; background-attachment: inherit; }
+	#wearorange-cover { background-size: cover; background-attachment: inherit; }
+	#about-cover { background-position: right top; background-size: cover; background-attachment: inherit; }
+
+}
+
+/* iPhone 6+ */
+@media all
+  and (min-width: 668px) 
+  and (max-width: 767px)  {
+  	section article { width: 80%; }
+	section #portfolio-page { width: 80%; }
+	#style { width: 48%; }
+	header { height: 60vh; background-size: 100%; background-position: center top; }
+	header div { width: 50% }
+	body section:nth-child(3) > div  { background-position: center right; background-size: cover; }
+	body section:nth-child(5) > div { background-size: cover; background-attachment: inherit; }
+	#girl-code-cover { background-size: cover; background-attachment: inherit;  }
+	#hlo-cover { background-size: cover; background-attachment: inherit; }
+	#wired-cover { background-size: cover; background-attachment: inherit; }
+	#beautifulexposure-cover { background-size: cover; background-attachment: inherit; }
+	#anatolian-cover { background-size: cover; background-attachment: inherit; }
+	#pizzahut-cover { background-size: cover; background-attachment: inherit; }
+	#arc-cover { background-size: cover; background-attachment: inherit; }
+	#amivitale-cover { background-size: cover; background-attachment: inherit; }
+	#honey-cover { background-size: cover; background-attachment: inherit; }
+	#cityinternships-cover { background-size: cover; background-attachment: inherit; }
+	#wearorange-cover { background-size: cover; background-attachment: inherit; }
+	#about-cover { background-position: right; background-size: cover; background-attachment: inherit; }
+	#grid-container .item { width: 100%; }
+	p { font-size: .8em; line-height: 20px; }
+	h1 { font-size: 1.3em; }
+	#first-column h1 { font-size: 1em; }
+  
+}
+
+/* iPhone 6 */
+@media all 
+  and (min-width: 569px) 
+  and (max-width: 667px)  {
+  	section article { width: 80%; }
+	section #portfolio-page { width: 80%; }
+	#style { width: 47.5%; }
+	header { height: 60vh; background-size: 100%; background-position: center top; }
+	header div { width: 60% }
+	body section:nth-child(3) > div  { background-position: center right; background-size: cover; background-attachment: inherit; }
+	body section:nth-child(5) > div { background-size: cover; height: 500px; height: 300px; background-attachment: inherit; }
+	#girl-code-cover { background-size: cover; background-attachment: inherit; }
+	#hlo-cover { background-size: cover; background-attachment: inherit; }
+	#wired-cover { background-size: cover; background-attachment: inherit; }
+	#beautifulexposure-cover { background-size: cover; background-attachment: inherit; }
+	#anatolian-cover { background-size: cover; background-attachment: inherit; }
+	#pizzahut-cover { background-size: cover; background-attachment: inherit; }
+	#arc-cover { background-size: cover; background-attachment: inherit; }
+	#amivitale-cover { background-size: cover; background-attachment: inherit; }
+	#honey-cover { background-size: cover; background-attachment: inherit; }
+	#cityinternships-cover { background-size: cover; background-attachment: inherit; }
+	#wearorange-cover { background-size: cover; background-attachment: inherit; }
+	#about-cover { background-position: right; background-size: cover; background-attachment: inherit; }
+	#grid-container .item { width: 100%; }
+	p { font-size: .8em; line-height: 20px; }
+	h1 { font-size: 1.5em; }
+	section > h1 { font-size: 1.2em; }
+	section article { flex-direction: column; }
+	#first-column { width: 100%; }
+	#second-column { width: 100%; }
+}
+
+/* iPhone 5 */
+@media all
+  and (min-width: 481px) 
+  and (max-width: 568px)  {
+  	section article { width: 80%; }
+	section #portfolio-page { width: 80%; }
+	header { height: 60vh; background-size: 100%; background-position: center top; }
+	header nav ul li { padding: 30px 10px; }
+	header div { width: 70% }
+	body section:nth-child(3) > div  { background-position: center right; background-size: cover; background-attachment: inherit; }
+	body section:nth-child(5) > div { background-size: cover; height: 500px; height: 300px; background-attachment: inherit; }
+	#girl-code-cover { background-size: cover; background-attachment: inherit; }
+	#hlo-cover { background-size: cover; background-attachment: inherit; }
+	#wired-cover { background-size: cover; background-attachment: inherit; }
+	#beautifulexposure-cover { background-size: cover; background-attachment: inherit; }
+	#anatolian-cover { background-size: cover; background-attachment: inherit; }
+	#pizzahut-cover { background-size: cover; background-attachment: inherit; }
+	#arc-cover { background-size: cover; background-attachment: inherit; }
+	#amivitale-cover { background-size: cover; background-attachment: inherit; }
+	#honey-cover { background-size: cover; background-attachment: inherit; }
+	#cityinternships-cover { background-size: cover; background-attachment: inherit; }
+	#wearorange-cover { background-size: cover; background-attachment: inherit; }
+	#about-cover { background-position: right; background-size: cover; background-attachment: inherit; }
+	#grid-container .item { width: 100%; }
+	p { font-size: .8em; line-height: 20px; }
+	h1 { font-size: 1.5em; }
+	section > h1 { font-size: 1.2em; }
+	section article { flex-direction: column; }
+	#first-column { width: 100%; }
+	#second-column { width: 100%; }
+	#visual-description { display:none; }
+	#style { width: 100%; }
+	.left { margin-right: 0; }
+	.right { margin-left: 0; }
+}
+
+/* iPhone 4 */
+@media all
+  and (min-width: 300px) 
+  and (max-width: 480px)  {
+  	section article { width: 80%; }
+	section #portfolio-page { width: 80%; }
+	header { height: 60vh; background-size: 100%; background-position: center top; }
+	header nav ul li { padding: 30px 10px; }
+	header div { width: 70% }
+	body section:nth-child(3) > div  { background-position: center right; background-size: cover; background-attachment: inherit; }
+	body section:nth-child(5) > div { background-size: cover; height: 500px; height: 300px; background-attachment: inherit; }
+	#girl-code-cover { background-size: cover; background-attachment: inherit; }
+	#hlo-cover { background-size: cover; background-attachment: inherit; }
+	#wired-cover { background-size: cover; background-attachment: inherit; }
+	#beautifulexposure-cover { background-size: cover; background-attachment: inherit; }
+	#anatolian-cover { background-size: cover; background-attachment: inherit; }
+	#pizzahut-cover { background-size: cover; background-attachment: inherit; }
+	#arc-cover { background-size: cover; background-attachment: inherit; }
+	#amivitale-cover { background-size: cover; background-attachment: inherit; }
+	#honey-cover { background-size: cover; background-attachment: inherit; }
+	#cityinternships-cover { background-size: cover; background-attachment: inherit; }
+	#wearorange-cover { background-size: cover; background-attachment: inherit; }
+	#about-cover { background-position: right; background-size: cover; background-attachment: inherit; }
+	#grid-container .item { width: 100%; }
+	p { font-size: .8em; line-height: 20px; }
+	h1 { font-size: 1.2em; }
+	section > h1 { font-size: 1em; }
+	section article { flex-direction: column; }
+	#first-column { width: 100%; }
+	#second-column { width: 100%; }
+	#visual-description { display:none; }
+	#style { width: 100%; }
+	.left { margin-right: 0; }
+	.right { margin-left: 0; }
+}
