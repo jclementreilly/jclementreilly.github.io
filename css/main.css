@@ -27,7 +27,7 @@ header {
 	color: #fff;
 }
 
-#girl-code-cover { background-image: url('../img/page-covers/gcm.jpg'); }
+#girl-code-cover { background-image: url('../img/page-covers/gcm.jpg'); filter: grayscale(100%); }
 #hlo-cover { background-image: url('../img/page-covers/hlo.jpg'); }
 #wired-cover { background-image: url('../img/page-covers/wired.jpg'); }
 #beautifulexposure-cover { background-image: url('../img/page-covers/beautifulexposure.jpg'); }
