@@ -107,7 +107,7 @@ section #portfolio-page ul li a:hover { color: rgb(177,175,218); }
 span { margin-bottom: 10px; display: flex; justify-content:center; font-family: "Montserrat"; color: rgb(31,31,31); text-decoration:none; text-transform:uppercase; font-size: 1em; letter-spacing: 1px; }
 
 #grid-container { width: 100%; margin-bottom: 20px; }
-#grid-container .item { width: 32%; margin-bottom: 20px; filter: grayscale(100%); }
+#grid-container .item { width: 32%; margin-bottom: 20px; }
 #grid-container .item:hover .description { display: block; }
 #grid-container .item .description { display: none; background: rgb(31,31,31); position: absolute; width: 100%; height: 100%; top: 0; left: 0; text-align: center; }
 #grid-container .item .description > div { display: table; width: 100%; height: 100%; }
