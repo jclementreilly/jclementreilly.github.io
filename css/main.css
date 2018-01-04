@@ -27,8 +27,8 @@ header {
 	background-color: #0f6fff;
 }
 
-#girl-code-cover { background-image: url('../img/page-covers/gcm.jpg'); }
-#hlo-cover { background-image: url('../img/page-covers/hlo.jpg'); }
+#girl-code-cover { background-image: url('../img/page-covers/gcm.jpg'); filter: grayscale(100%); }
+#hlo-cover { background-image: url('../img/page-covers/hlo.jpg'); filter: grayscale(100%); }
 #wired-cover { background-image: url('../img/page-covers/wired.jpg'); }
 #beautifulexposure-cover { background-image: url('../img/page-covers/beautifulexposure.jpg'); }
 #anatolian-cover { background-image: url('../img/page-covers/anatoliankitchen.jpg'); }
