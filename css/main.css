@@ -25,7 +25,6 @@ header {
 	height: 70vh;
 	color: #000;
 	background-color: #0f6fff;
-	filter: grayscale(100%);
 }
 
 #girl-code-cover { background-image: url('../img/page-covers/gcm.jpg'); }
